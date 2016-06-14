@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!--
+References:
++ http://stp.lingfil.uu.se/~nivre/research/example.xml.txt
++ СинТагРус: Синтаксически размеченный корпус русских текстов (pamjatka 2012.doc)
+-->
+<tagsets corpus="SynTagRus" type="Dependency_Treebank" level="token">
+<annotation name="mor_ftr">
+<!-- http://www.ruscorpora.ru/en/corpora-morph.html -->
+<attribute name="POS">
+<value name="S"/> <!-- noun -->
+<value name="A"/> <!-- adjective -->
+<value name="V"/> <!-- verb -->
+<value name="ADV"/> <!-- adverb -->
+<value name="NUM"/> <!-- numeral -->
+<value name="PR"/> <!-- preposition -->
+<value name="COM"/> <!-- combining form -->
+<value name="CONJ"/> <!-- conjunction -->
+<value name="PART"/> <!-- particle -->
+<value name="P"/> <!-- word sentence -->
+<value name="INTJ"/> <!-- interjection -->
+<value name="NID"/> <!-- uninflected/indeclinable word -->
+</attribute>
+<attribute name="animacy">
+<!-- for S (always), A, NUM and V (participle form)
+ conditions: accusative, masculine/neuter, different endings -->
+<value name="ОД"/> <!-- animate -->
+<value name="НЕОД"/> <!-- inanimate -->
+</attribute>
+<attribute name="gender">
+<value name="МУЖ"/> <!-- masculine -->
+<value name="ЖЕН"/> <!-- feminine -->
+<value name="СРЕД"/> <!-- neuter -->
+</attribute>
+<attribute name="number">
+<value name="ЕД"/> <!-- singular -->
+<value name="МН"/> <!-- plural -->
+</attribute>
+<attribute name="case">
+<value name="ИМ"/> <!-- nominative -->
+<value name="РОД"/> <!-- genitive -->
+<value name="ПАРТ"/> <!-- second genitive (S) -->
+<value name="ДАТ"/> <!-- dative -->
+<value name="ВИН"/> <!-- accusative -->
+<value name="ТВОР"/> <!-- instrumental -->
+<value name="ПР"/> <!-- locative -->
+<value name="МЕСТН"/> <!-- second locative (S) -->
+</attribute>
+<attribute name="degree">
+<value name="СРАВ"/> <!-- comparative -->
+<value name="ПРЕВ"/> <!-- superlative -->
+<!-- positive -->
+</attribute>
+<attribute name="brevity">
+<value name="КР"/> <!-- short form -->
+<!-- full form -->
+</attribute>
+<attribute name="form">
+<value name="ИНФ"/> <!-- infinitive -->
+<value name="ПРИЧ"/> <!-- participle -->
+<value name="ДЕЕПР"/> <!-- gerund -->
+<!-- finite forms -->
+</attribute>
+<attribute name="mood">
+<value name="ИЗЪЯВ"/> <!-- indicative -->
+<value name="ПОВ"/> <!-- imperative -->
+<!-- subjunctive (syn_lnk) -->
+</attribute>
+<attribute name="aspect">
+<value name="НЕСОВ"/> <!-- imperfective -->
+<value name="СОВ"/> <!-- perfective -->
+</attribute>
+<attribute name="tense">
+<value name="НЕПРОШ"/> <!-- present or future -->
+<value name="ПРОШ"/> <!-- past -->
+<value name="НАСТ"/> <!-- present (быть) -->
+</attribute>
+<attribute name="person">
+<!-- for V -->
+<value name="1-Л"/> <!-- first person -->
+<value name="2-Л"/> <!-- second person -->
+<value name="3-Л"/> <!-- third person -->
+</attribute>
+<attribute name="voice">
+<value name="СРАД"/> <!-- passive -->
+<!-- active -->
+</attribute>
+<attribute name="other">
+<value name="СЛ"/> <!-- combining form -->
+<value name="СМЯГ"/> <!-- prefix 'по' + comparative -->
+</attribute>
+</annotation>
+<annotation name="syn_lnk">
+<group name="actant"> <!-- Актантные СинтО 26 -->
+<link name="предик"/> <!-- predicative -->
+<link name="дат-субъект"/> <!-- dative-subjective? -->
+<link name="агент"/> <!-- agentive -->
+<link name="квазиагент"/> <!-- quasiagentive -->
+<link name="несобст-агент"/> <!-- improperly agentive? -->
+<link name="1-компл"/> <!-- 1st completive -->
+<link name="2-компл"/> <!-- 2nd completive -->
+<link name="3-компл"/> <!-- 3rd completive -->
+<link name="4-компл"/> <!-- 4th completive -->
+<link name="5-компл"/> <!-- 5th completive -->
+<link name="присвяз"/> <!-- copulative -->
+<link name="1-несобст-компл"/> <!-- 1st improper completive? -->
+<link name="2-несобст-компл"/> <!-- 2nd improper completive? -->
+<link name="3-несобст-компл"/> <!-- 3rd improper completive? -->
+<link name="4-несобст-компл"/> <!-- 4th improper completive? -->
+<link name="неакт-компл"/> <!-- nonactant-completive? -->
+<link name="компл-аппоз"/> <!-- completive-appositive -->
+<link name="предл"/> <!-- prepositional -->
+<link name="подч-союзн"/> <!-- subordinative-conjunctive -->
+<link name="инф-союзн"/> <!-- infinitive-conjunctive -->
+<link name="сравнит"/> <!-- comparative -->
+<link name="сравн-союзн"/> <!-- comparative-conjunctive -->
+<link name="электив"/> <!-- elective *edited -->
+<link name="сент-предик"/> <!-- sentential-predicative -->
+<link name="адр-присв"/> <!-- addressee-copulative? -->
+<link name="дат-сент"/> <!-- dative-sentential -->
+</group>
+<group name="attributive"> <!-- Атрибутивные СинтО 31 -->
+<subgroup name="modificative"> <!-- Определительные 4 -->
+<link name="опред"/> <!-- proper modificative -->
+<link name="оп-опред"/> <!-- descriptive-modificative -->
+<link name="аппрокс-порядк"/> <!-- approximative-ordinal? -->
+<link name="релят"/> <!-- relative -->
+</subgroup>
+<subgroup name="attributive"> <!-- Общеатрибутивные 2 -->
+<link name="атриб"/> <!-- proper attributive -->
+<link name="композ"/> <!-- composite -->
+</subgroup>
+<subgroup name="appositive"> <!-- Аппозитивные 4 -->
+<link name="аппоз"/> <!-- proper appositive -->
+<link name="об-аппоз"/> <!-- separate appositive? -->
+<link name="ном-аппоз"/> <!-- nominative-appositive? -->
+<link name="нум-аппоз"/> <!-- numerative-appositive? -->
+</subgroup>
+<subgroup name="quantitative"> <!-- Каличественные 6 -->
+<link name="количест"/> <!-- proper quantitative? -->
+<link name="аппрокс-колич"/> <!-- approximative-quantitative? -->
+<link name="колич-копред"/> <!-- quantitative-copredicative? -->
+<link name="колич-огран"/> <!-- quantitative-restrictive? -->
+<link name="распред"/> <!-- distributive? -->
+<link name="аддит"/> <!-- additive? -->
+</subgroup>
+<subgroup name="adverbial"> <!-- Обстоятельственные 15 -->
+<link name="обст"/> <!-- proper adverbial (/circumstantial?) -->
+<link name="длительн"/> <!-- durative? -->
+<link name="кратно-длительн"/> <!-- multiple durative? 	-->
+<link name="дистанц"/> <!-- distant? -->
+<link name="обст-тавт"/> <!-- adverbial-tautological? -->
+<link name="суб-обст"/> <!-- subjective-adverbial? -->
+<link name="об-обст"/> <!-- objective-adverbial? -->
+<link name="суб-копр"/> <!-- subjective-copredicative? -->
+<link name="об-копр"/> <!-- objective-copredicative -->
+<link name="огранич"/> <!-- restrictive? -->
+<link name="вводн"/> <!-- parenthetic(al) -->
+<link name="изъясн"/> <!-- subordinative? -->
+<link name="разъяснит"/> <!-- explanatory? -->
+<link name="примыкат"/> <!-- adjoining? -->
+<link name="уточн"/> <!-- specifying? -->
+</subgroup>
+</group>
+<group name="coordinative"> <!-- Сочинительные СинтО 5 -->
+<link name="сочин"/> <!-- coordinative -->
+<link name="сент-соч"/> <!-- sentential-coordinative -->
+<link name="соч-союзн"/> <!-- coordinative-conjunctive -->
+<link name="ком-сочин"/> <!-- communicative-coordinative? -->
+<link name="кратн"/> <!-- multiple? -->
+</group>
+<group name="auxiliary"> <!-- Служебные СинтО 8 -->
+<link name="аналит"/> <!-- analytical -->
+<link name="пасс-анал"/> <!-- passive-analytical -->
+<link name="вспом"/> <!-- auxiliary? -->
+<link name="колич-вспом"/> <!-- quantitative-auxiliary -->
+<link name="соотнос"/> <!-- correlative -->
+<link name="эксплет"/> <!-- expletive -->
+<link name="пролепт"/> <!-- proleptic -->
+<link name="эллипт"/> <!-- elliptic? -->
+</group>
+</annotation>
+</tagsets>

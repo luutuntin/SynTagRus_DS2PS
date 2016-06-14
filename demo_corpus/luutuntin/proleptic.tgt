@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<text>
+<inf>
+</inf>
+<body>
+<S ID="1">
+<W DOM="2" FEAT="S ЕД ЖЕН ИМ НЕОД" ID="1" LEMMA="ШКОЛА" LINK="пролепт">Школа</W> - 
+<W DOM="4" FEAT="S ЕД СРЕД ИМ НЕОД" ID="2" LEMMA="ЭТО" LINK="предик">это</W> 
+<W DOM="4" FEAT="A ЕД МУЖ ИМ" ID="3" LEMMA="НАШ" LINK="опред">наш</W> 
+<W DOM="_root" FEAT="S ЕД МУЖ ИМ НЕОД" ID="4" LEMMA="ДОМ">дом</W>
+</S>
+</body>
+</text>

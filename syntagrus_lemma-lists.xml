@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<!-- http://www.russianlessons.net/vocabulary/question_words.php -->
+<lists corpus="SynTagRus" type="Dependency_Treebank" level="token">
+<list name="WH">
+<lemma form="который"/>
+<lemma form="кто"/>
+<lemma form="что"/>
+<lemma form="чей"/>
+<lemma form="какой"/>
+<lemma form="как"/>
+<lemma form="где"/>
+<lemma form="куда"/>
+<lemma form="откуда"/>
+<lemma form="когда"/>
+<lemma form="почему"/>
+<lemma form="зачем"/>
+<lemma form="сколько"/>
+</list>
+</lists>
