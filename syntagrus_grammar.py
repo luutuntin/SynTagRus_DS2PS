@@ -22,7 +22,7 @@ X2XP = {
         'PART': 'PRT',
         'P':    'INTJ',
         'INTJ': 'INTJ', #<-> UH in Penn Treebank POS tags
-        'NID':  'NP',        
+        'NID':  'NIDP',        
         }   #'COM' -> modifier in NP
 
 def x2xp(node): #type(node): dict
